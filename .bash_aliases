@@ -6,3 +6,4 @@ alias plm='pl && mk'
 alias mkc='m clean && mk'
 alias plmc="pl && mkc"
 alias rs='repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags'
+alias sb='source ~/.bash_aliases'
