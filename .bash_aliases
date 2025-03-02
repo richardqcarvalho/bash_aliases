@@ -1,9 +1,10 @@
 alias p='source build/envsetup.sh'
-alias l='lunch aosp_taoyao-ap4a-userdebug'
+alias l='lunch aosp_taoyao-ap4a-eng'
 alias pl="p && l"
-alias mk='mka bacon -j$(nproc --all)'
+alias mk='m -j$(nproc --all)'
 alias plm='pl && mk'
 alias mkc='m clean && mk'
 alias plmc="pl && mkc"
 alias rs='repo sync -j$(nproc --all) --current-branch --force-sync --force-remove-dirty --no-clone-bundle --no-tags --no-use-superproject'
+alias ri='repo init --depth=1'
 alias sb='source ~/.bash_aliases'
